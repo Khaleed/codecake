@@ -12,7 +12,29 @@ export function HashMap () {
         }, 7); 
         return result; 
     }
-    this.getVal = key => array[hashCode(key) % array.length];
-   
-    this.setVal = (key, value) => array[hashCode(key) % array.length] = value;
+    this.getVal = key => {
+        let bucket = array[hashCode(key) % array.length];
+        if (!bucket) {
+            return null;
+        }
+
+        for (let i = 0, m = bucket.length; i < m; i++) {
+            let [tupleKey, tupleValue] = bucket[i];
+            if (tupleKey === key) {
+                return tupleValue;
+            }
+        }
+
+        return null;
+    }
+
+    this.setVal = (key, value) => {
+        let bucket = array[hashCode(key) % array.length];
+        if (!bucket) {
+            bucket = [];
+            array[hashCode(key) % array.length] = bucket;
+        }
+        // linked list
+        return bucket.push([key, value]);
+    }
 }
