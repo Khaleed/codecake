@@ -2,7 +2,7 @@ var webpack = require('webpack');
 var path = require('path');
 module.exports = {
     // console errors map to correct file and line number
-    devtool: 'source-map',
+    devtool: 'eval-source-map',
     // app entry point
     entry: [
         // runs babel helper code 
