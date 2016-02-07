@@ -2,7 +2,7 @@ var webpack = require('webpack');
 var path = require('path');
 module.exports = {
     // console errors map to correct file and line number
-    devtool: '"eval-cheap-module-source-map"',
+    devtool: 'eval-cheap-module-source-map',
     // app entry point
     entry: [
         // runs babel helper code 
@@ -16,7 +16,7 @@ module.exports = {
     ],
 
     devServer: {
-        contentBase: "public/"
+        contentBase: 'public/'
     },
 
     output: {
