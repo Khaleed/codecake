@@ -1,0 +1,1 @@
+These are basic code challenges to learn more about algorithms and data structures, written in JavaScript. 
