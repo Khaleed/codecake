@@ -1,5 +1,4 @@
 // implement a merge sort
-
 let arr = [1, 8, 2, 4, 3, 7, 9];
 
 let mergeList = (left, right) => {
@@ -26,7 +25,7 @@ let mergeList = (left, right) => {
     return result;
 }
 
-let mergeSort = list => {
+export function mergeSort(list) {
     // base case
     if (list.length <= 1) {
         return list;
