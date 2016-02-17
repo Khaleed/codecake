@@ -8,7 +8,7 @@ export function HashMap () {
      **/
 
     let hashCode = keyStr => {
-        let result = Array.prototype.reduce.call(keyStr, (_hash, char) {
+        let result = Array.prototype.reduce.call(keyStr, (_hash, char) => {
             return _hash * 31 + char.charCodeAt(0);
         }, 7);
         return result;
@@ -19,6 +19,7 @@ export function HashMap () {
         if (!bucket) {
             return null;
         }
+        // use find
         for (let i = 0, m = bucket.length; i < m; i++) {
             let [tupleKey, tupleValue] = bucket[i];
             if (tupleKey === key) {
