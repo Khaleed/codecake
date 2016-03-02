@@ -2,14 +2,15 @@
 
 // Task: Implement a Binary Search Tree
 function printData() {
-    return this.data;
+    return this.value;
 }
 
 // Node constructor
-function Node(data, left, right) {
-    this.data = data;
+function Node(value, left, right) {
+    this.value = value;
     this.left = left;
     this.right = right;
+    // helper
     this.printData = printData;
 }
 
@@ -24,9 +25,9 @@ function BST() {
 }
 
 // func to add new nodes
-function addNewNode(data) {
+function addNewNode(value) {
     // create Node object
-    let node = new Node(data, undefined, undefined);
+    let node = new Node(value, undefined, undefined);
     // check if BST has a root node
     if (this.root === null) {
         // set root node
@@ -40,8 +41,8 @@ function addNewNode(data) {
         // set up a loop that breaks once the correct insertion point is determined
         while (true) {
             parent = currentNode;
-            // check if data is less than node key value
-            if (data < currentNode.data) {
+            // check if value is less than node key value
+            if (value < currentNode.value) {
                 // point node to the left of the currentNode
                 currentNode = currentNode.left;
                 // check if the left of the currentNode is empty
