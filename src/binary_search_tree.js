@@ -21,8 +21,8 @@ function BST() {
 // func to add new nodes
 BST.prototype.addNewNode = function(value) {
     // create Node object
-    let node = new Node(value, undefined, undefined);
-    console.log("hi i am a new node " + node);
+    const node = new Node(value, undefined, undefined);
+    console.log(node);
     // check if BST has a root node
     if (this.root === undefined) {
         // set root node
