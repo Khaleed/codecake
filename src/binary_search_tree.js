@@ -1,31 +1,25 @@
 "use strict";
 
 // Task: Implement a Binary Search Tree
-function printData() {
-    return this.value;
-}
-
 // Node constructor
 function Node(value, left, right) {
     this.value = value;
     this.left = left;
     this.right = right;
-    // helper
-    this.printData = printData;
 }
+
+Node.prototype.printData = () => {
+    return this.value;
+};
 
 // Binary Search Tree Class
 function BST() {
     // root node
     this.root = undefined;
-    // func to add new nodes
-    this.addNewNode = addNewNode;
-    // visit each node in ascending order
-    this.ascendOrder = ascendOrder;
 }
 
 // func to add new nodes
-function addNewNode(value) {
+BST.prototype.addNewNode = value => {
     // create Node object
     let node = new Node(value, undefined, undefined);
     // check if BST has a root node
@@ -64,7 +58,10 @@ function addNewNode(value) {
 }
 
 // function to traverse BST in ascending order
+BST.prototype.inOrder = () => {
+    // traverse the BST in order
 
+};
 
 // Test BST
 let tree = new BST();
