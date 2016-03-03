@@ -8,7 +8,7 @@ function Node(value, left, right) {
     this.right = right;
 }
 
-Node.prototype.printData = () => {
+Node.prototype.print = function() {
     return this.value;
 };
 
@@ -19,16 +19,17 @@ function BST() {
 }
 
 // func to add new nodes
-BST.prototype.addNewNode = value => {
+BST.prototype.addNewNode = function(value) {
     // create Node object
     let node = new Node(value, undefined, undefined);
+    console.log("hi i am a new node " + node);
     // check if BST has a root node
-    if (this.root === null) {
+    if (this.root === undefined) {
         // set root node
         this.root = node;
     } else {
         // traverse the BST to find the correct node insertion point
-        // start from the current node and keep moving from level to level in the BST
+        // start from the current node and keep moving from level to level in BST
         let currentNode = this.root;
         // define the parent node
         let parent;
@@ -55,13 +56,20 @@ BST.prototype.addNewNode = value => {
             }
         }
     }
-}
+};
 
-// function to traverse BST in ascending order
-BST.prototype.inOrder = () => {
+// function to traverse BST in ascending order of node values
+BST.prototype.inOrder = (node) => {
     // traverse the BST in order
-
+    if (node !== undefined) {
+        // visit left side of the node
+        this.inOrder(node.left);
+        console.log(node.print)
+        // visit right side of the node
+        this.inOrder(node.right);
+    }
 };
 
 // Test BST
 let tree = new BST();
+tree.addNewNode("90");
