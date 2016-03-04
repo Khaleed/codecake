@@ -1,8 +1,8 @@
 "use strict";
 
 /* Task:
-   Implement a Binary Search Tree
-*/
+ Implement a Binary Search Tree
+ */
 
 // Node constructor
 function Node(value, left, right) {
@@ -25,7 +25,6 @@ function BST() {
 BST.prototype.addNewNode = function(value) {
     // create Node object
     const node = new Node(value, undefined, undefined);
-    console.log(node);
     // check if BST has a root node
     if (this.root === undefined) {
         // set root node
@@ -75,10 +74,8 @@ BST.prototype.inOrder = (node) => {
 
 // Test BST
 let tree = new BST();
-console.log(tree.addNewNode("23"));
-tree.addNewNode("45");
-tree.addNewNode("16");
-tree.addNewNode("37");
-tree.addNewNode("3");
-tree.addNewNode("99");
-tree.addNewNode("22");
+
+module.exports = {
+    BST: BST,
+    Node: Node
+};
