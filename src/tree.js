@@ -25,4 +25,9 @@ function Tree(data)  {
 let CEO = new Tree("CEO");
 // add VP
 let VP = new Tree("VP");
-console.log(VP);
+//console.log(VP);
+
+module.exports = {
+    Tree: Tree,
+    Node: Node
+};

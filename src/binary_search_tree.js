@@ -1,6 +1,9 @@
 "use strict";
 
-// Task: Implement a Binary Search Tree
+/* Task:
+   Implement a Binary Search Tree
+*/
+
 // Node constructor
 function Node(value, left, right) {
     this.value = value;
@@ -72,4 +75,10 @@ BST.prototype.inOrder = (node) => {
 
 // Test BST
 let tree = new BST();
-tree.addNewNode("90");
+console.log(tree.addNewNode("23"));
+tree.addNewNode("45");
+tree.addNewNode("16");
+tree.addNewNode("37");
+tree.addNewNode("3");
+tree.addNewNode("99");
+tree.addNewNode("22");
