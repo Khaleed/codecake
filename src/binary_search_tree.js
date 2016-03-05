@@ -63,7 +63,7 @@ BST.prototype.addNewNode = function(value) {
 };
 
 // function to traverse BST in ascending order of node values
-BST.prototype.inOrder = function(node) => {
+BST.prototype.inOrder = function(node) {
     // traverse the BST in order
     if (node !== undefined) {
         // visit left side of the node
