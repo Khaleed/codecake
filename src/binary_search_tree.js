@@ -40,18 +40,20 @@ BST.prototype.addNewNode = function(value) {
             parent = currentNode;
             // check if value is less than node key value
             if (value < currentNode.value) {
-                // point node to the left of the currentNode
+                // point to the left of the currentNode
                 currentNode = currentNode.left;
                 // check if the left of the currentNode is empty
                 if (currentNode === undefined) {
+                    // put node here
                     parent.left = node;
                     break;
                 }
             } else {
-                // point node to the right of the current node
+                // point to the right of the current node
                 currentNode = currentNode.right;
                 // check if the right of the currentNode is empty
                 if (currentNode === undefined) {
+                    // put node here
                     parent.right = node;
                     break;
                 }
@@ -61,12 +63,12 @@ BST.prototype.addNewNode = function(value) {
 };
 
 // function to traverse BST in ascending order of node values
-BST.prototype.inOrder = (node) => {
+BST.prototype.inOrder = function(node) => {
     // traverse the BST in order
     if (node !== undefined) {
         // visit left side of the node
         this.inOrder(node.left);
-        console.log(node.print)
+        console.log(node.print);
         // visit right side of the node
         this.inOrder(node.right);
     }
