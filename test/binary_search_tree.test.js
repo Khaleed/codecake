@@ -18,10 +18,14 @@ describe('Binary Search Tree', function() {
             // level 2 right value
             tree.addNewNode("37");
             // level 2 left value
+            // function fails here
             tree.addNewNode("3");
             assert.strictEqual(tree.root.value, "23");
             assert.strictEqual(tree.root.right.value, "45");
             assert.strictEqual(tree.root.left.value, "16");
+            assert.strictEqual(tree.root.right.left.value, "37");
+            console.log(tree.root.left);
+            assert.strictEqual(tree.root.left.left.value, "3");
         });
     });
 });

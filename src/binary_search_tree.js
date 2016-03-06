@@ -1,7 +1,7 @@
 "use strict";
 
-/* Task:
- Implement a Binary Search Tree
+/* Task: Implement a Binary Search Tree
+   using whatever language you heart desires
  */
 
 // Node constructor
