@@ -1,7 +1,7 @@
 "use strict";
 
 // Implement Binary Search Algorithm on a list that is sorted in ascending order
-binarySearch = (key, list, min, max) => {
+let binarySearch = (key, list, min, max) => {
 
     // base case is that key is not even in the list
     if (max < min) {
