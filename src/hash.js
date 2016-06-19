@@ -1,12 +1,13 @@
+// Hash table is just an array, coupled with a hash function
 export function HashMap () {
     let array = [];
     array.length = 10;
+
     /**
      * Reduces a string to a numeric value, used for hash table internals
      * @param keyStr {String}
      * @returns {Integer}
      **/
-
     let hashCode = keyStr => {
         let result = Array.prototype.reduce.call(keyStr, (_hash, char) => {
             return _hash * 31 + char.charCodeAt(0);
