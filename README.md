@@ -1,6 +1,6 @@
 ## Why?
 
-These are basic code challenges to learn more about algorithms and data structures, written in JavaScripT. Tests are executed where appropriate.
+These are basic code challenges to learn more about algorithms and data structures, written in JavaScript. Tests are executed where appropriate.
 
 ## Tools
 
