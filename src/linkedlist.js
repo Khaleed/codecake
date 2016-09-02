@@ -8,3 +8,19 @@
    we can create and delete nodes as when we want
    you don't have to guess the size of the list beforehand
  **/
+
+// create constructor for LinkedList
+function LinkedList() {
+    this.head = null;
+}
+
+// check if a list is empty
+LinkedList.prototype.isEmpty = function () {
+    return this.head === null;
+};
+
+// check the number of nodes on a list
+LinkedList.prototype.size = function() {
+    // temp variable to keep account of current node
+
+};
