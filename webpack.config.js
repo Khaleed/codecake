@@ -6,7 +6,7 @@ module.exports = {
     // app entry point
     entry: [
         // runs babel helper code 
-         'babel-polyfill',
+        'babel-polyfill',
         // current app
         './src/index.js',
         // hot style updates
@@ -28,14 +28,14 @@ module.exports = {
     // define module loaders
     module: {
         loaders: [
-             {
+            {
                 loader: 'babel-loader',
                 test: /\.jsx?$/,
                 exclude: /(node_modules|bower_components)/,
                 // options to configure babel with
                 query: {
                     plugins: ['transform-runtime'],
-                    presets: ['es2015', 'stage-0'],
+                    presets: ['es2015', 'stage-0']
                 }
             }
         ]
@@ -52,3 +52,4 @@ module.exports = {
         new webpack.HotModuleReplacementPlugin()
     ]
 };
+;
