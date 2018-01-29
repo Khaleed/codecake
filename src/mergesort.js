@@ -51,10 +51,10 @@ const mergeSort = xs => {
     } else {
         // find mid-point
         const mid = Math.floor(xs.length / 2);
-        // split xs into two sub-lists
+        // split xs into sub-lists
         const ys = xs.slice(0, mid);
         const zs = xs.slice(mid, xs.length);
-        // sort left and right
+        // sort sub-lists
         const sortedYs = mergeSort(ys);
         const sortedZs = mergeSort(zs);
         return merge(sortedYs, sortedZs);
