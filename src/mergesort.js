@@ -2,6 +2,7 @@
 
 /**
  * merge takes two sorted lists and merges them to produce a new sorted list
+ *
  * merge :: (SortedArray, SortedArray) -> SortedArray
  */
 const merge = (xs, ys) => {
@@ -39,9 +40,10 @@ const ys = [2, 4, 6];
 console.log(`I'm merging two sorted lists: ${merge(xs, ys)}`); //=> [1, 2, 3, 4, 5, 6, 7, 9]
 
 /**
- * MergeSort splits unsorted list into two sub lists - left and right, then sorts left and right, and then finally merges left and right.
+ * MergeSort splits unsorted list into two sub lists, sorts them, and then merges them.
  * Time complexity of this algorithm is O(n log n).
- * Space complexity O(n)
+ * Space complexity is O(n).
+ *
  * mergeSort :: (UnsortedArray) -> SortedArray
  */
 const mergeSort = xs => {
