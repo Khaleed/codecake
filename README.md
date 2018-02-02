@@ -19,16 +19,6 @@ To get dependencies
 
 `npm install`
 
-Install [Webpack](https://webpack.js.org/) globally 
-
-`npm install webpack-devserver webpack -g`
-
-### Server
-
-To serve at http://localhost:3000/public using  Webpack
-
-`npm run watch`
-
 ### Test
 
 To run tests using 
