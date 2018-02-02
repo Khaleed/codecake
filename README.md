@@ -8,8 +8,8 @@ To better understand basic algorithms and data structures.
 
 ## Tools
 
-  - [Node](https://webpack.js.org/)
-  - [Jest](http://mochajs.org/)
+  - [Node](https://nodejs.org/)
+  - [Jest](https://facebook.github.io/jest/)
 
 ## Installation
 
