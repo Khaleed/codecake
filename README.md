@@ -1,6 +1,6 @@
 # Code Cake
 
-Code challenges written in JavaScript. Tests are included where appropriate.
+Coding playground for implementing various algorithms and data structures. Tests are included where appropriate.
 
 ## Why?
 
@@ -38,9 +38,7 @@ To run tests using
 
 ## License
 
-Code Cake is released under the <a href="https://opensource.org/licenses/MIT">The MIT License<a/>.
-
-<a href='http://www.recurse.com' title='Made with love at the Recurse Center'><img src='https://cloud.githubusercontent.com/assets/2883345/11322975/9e575dce-910b-11e5-9f47-1fb1b530a4bd.png' height='75px'/></a> 
+Code Cake is released under the <a href="https://opensource.org/licenses/Apache-2.0">Apache License, Version 2.0<a/>.
 
 
 
