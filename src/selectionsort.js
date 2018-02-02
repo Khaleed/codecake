@@ -2,7 +2,7 @@
  * Finds the smallest unsorted element and adds it to the end of a sorted list.
  *
  * Time Complexity in worst case is 0(n^2) since we have to iterate
- * over each of the n elements in of the list to find the smallest unsorted elements
+ * over each of the n elements in the list to find the smallest unsorted element
  * and repeat this process n times as only one element gets sorted on each pass.
  *
  * Time complexity in best case is Ω(n^2) since there is no gurantee the list is sorted
