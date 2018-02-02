@@ -35,10 +35,6 @@ const merge = (xs, ys) => {
     return zs;
 };
 
-const xs = [1, 3, 5, 7, 9];
-const ys = [2, 4, 6];
-console.log(`I'm merging two sorted lists: ${merge(xs, ys)}`); //=> [1, 2, 3, 4, 5, 6, 7, 9]
-
 /**
  * MergeSort splits unsorted list into two sub lists, sorts them, and then merges them.
  * Time complexity of this algorithm is O(n log(n)) -> n log10(n) -> where n is 1000, log10(1000) = x -> 10^x = 1000 -> 10.10.10 -> n^3 -> 3
@@ -63,5 +59,4 @@ const mergeSort = xs => {
     }
 };
 
-const unsortedXs = [1, 8, 2, 4, 3, 7, 9];
-console.log(`Applying merge sort to unsorted list: ${mergeSort(unsortedXs)}`); // => [1, 2, 3, 4, 7, 8, 9];
+module.exports = mergeSort;
