@@ -41,7 +41,7 @@ console.log(`I'm merging two sorted lists: ${merge(xs, ys)}`); //=> [1, 2, 3, 4,
 
 /**
  * MergeSort splits unsorted list into two sub lists, sorts them, and then merges them.
- * Time complexity of this algorithm is O(n log n).
+ * Time complexity of this algorithm is O(n log(n)) -> n log10(n) -> where n is 1000, log10(1000) = x -> 10^x = 1000 -> 10.10.10 -> n^3 -> 3
  * Space complexity is O(n).
  *
  * mergeSort :: (UnsortedArray) -> SortedArray
