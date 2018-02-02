@@ -8,7 +8,7 @@
  * Time complexity in best case is Ω(n^2) since there is no gurantee the list is sorted
  * until we go through the process n times for each element (until we actually run selection sort).
  *
- * Space Complexity is constant at O(1) because we are pushing smallest element to sorted array
+ * Space Complexity is constant at O(1) because we are pushing smallest element to sorted list
  * which is a constant operation.
  *
  */
