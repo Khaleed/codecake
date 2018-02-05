@@ -36,8 +36,11 @@ const merge = (xs, ys) => {
 };
 
 /**
- * MergeSort splits unsorted list into two sub lists, sorts them, and then merges them.
- * Time complexity of this algorithm is O(n log(n)) -> n log10(n) -> where n is 1000, log10(1000) = x -> 10^x = 1000 -> 10.10.10 -> n^3 -> 3
+ * MergeSort splits unsorted list into two sub lists, recursively sorts them, and then merges them.
+ *
+ * Time complexity of this algorithm is O(n log(n)) with an upper bound of 6n log2(n) + 6n operations.
+ * This is a win because of the benefits of the divide & conquer paradigm as each time.
+ *
  * Space complexity is O(n).
  *
  * mergeSort :: (UnsortedArray) -> SortedArray
