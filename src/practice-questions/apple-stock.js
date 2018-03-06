@@ -16,9 +16,6 @@
 
 // Price is Number, Profit is Number
 // interp. the price of a stock and profit from buying and selling apple stock
-// const price = 10;
-// const profit = 6;
-// stub
 
 /* const getMaxProfit = xs => {
      ... xs
