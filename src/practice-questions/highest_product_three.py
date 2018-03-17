@@ -27,6 +27,10 @@ Constraints: 1. list can't be less than 3 (Fail Fast)
 # find_highest_three :: [Int] --> Int
 # Find the highest product of 3 ints in a given list
 def find_highest_three(xs):
+
+    if len(xs) < 3:
+        print("List must have at least three integers")
+
     # initial state
     largestProductOf3 = xs[0] * xs[1] * xs[2]  # 3 * -5 * 2 = -30
     largestProductOf2 = xs[0] * xs[1]  # 3 * - 5 = -15
