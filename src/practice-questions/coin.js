@@ -15,9 +15,9 @@
  * 2¢, 2¢
  */
 
-// numOfWays :: Amount, [Denomination] -> Int
+// possibleDenominations :: Amount, [Denomination] -> Int
 // intrep. Amount as the amount of money and denomination as a list of coins
-// const numOfWays = (amount, denominations) => {
+// const possibleDenominations = (amount, denominations) => {
 //     return 0;
 // };
 
@@ -72,6 +72,6 @@ class Change {
     }
 }
 
-const numOfWays = new Change().possibleDenominations;
+const numWays = new Change().possibleDenominations;
 
-module.exports = numOfWays;
+module.exports = numWays;
