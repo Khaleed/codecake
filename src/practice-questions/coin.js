@@ -72,6 +72,6 @@ class Change {
     }
 }
 
-const numWays = new Change().possibleDenominations;
+const numOfWays = new Change().possibleDenominations;
 
-module.exports = numWays;
+module.exports = numOfWays;
